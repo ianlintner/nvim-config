@@ -4,7 +4,7 @@ My personal Neovim configuration, optimized for C# (Godot), TypeScript, and Pyth
 
 ## Highlights
 - **Plugin Manager:** [lazy.nvim](https://github.com/folke/lazy.nvim)
-- **File Explorer:** [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) & [NERDTree](https://github.com/preservim/nerdtree)
+- **File Explorer:** [NERDTree](https://github.com/preservim/nerdtree)
 - **Search & Replace:** [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
 - **Godot Integration:** [godot.nvim](https://github.com/Lommix/godot.nvim)
 - **C# / Dotnet:** [easy-dotnet.nvim](https://github.com/GustavEikaas/easy-dotnet.nvim)
