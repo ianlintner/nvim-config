@@ -1,0 +1,9 @@
+# Swap files and temp files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Cache and logs
+.repro/
+*.log
