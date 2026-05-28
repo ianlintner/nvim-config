@@ -27,4 +27,22 @@ return {
     },
     expose_commands = true,
   },
+  config = function(_, opts)
+    local dap = require("dap")
+    dap.adapters.godot = {
+      type = "server",
+      host = opts.dap.host,
+      port = opts.dap.port,
+    }
+    dap.configurations.gdscript = {
+      {
+        type = "godot",
+        request = "launch",
+        name = "Launch scene",
+        project = "${workspaceFolder}",
+        launch_scene = true,
+      },
+    }
+    require("godot").setup(opts)
+  end,
 }

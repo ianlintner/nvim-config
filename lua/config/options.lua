@@ -50,10 +50,10 @@ vim.api.nvim_create_autocmd("VimEnter", {
 })
 
 -- Add .NET Core SDK tools to PATH (needed for easy-dotnet tool dependencies)
-vim.env.PATH = vim.env.PATH .. ":/Users/ianlintner/.dotnet/tools"
+vim.env.PATH = vim.env.PATH .. ":" .. vim.fn.expand("~/.dotnet/tools")
 
 -- Add Mason bin directory to PATH so Neovim can find installed LSPs natively
-vim.env.PATH = "/Users/ianlintner/.local/share/nvim/mason/bin:" .. vim.env.PATH
+vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
 
 
 

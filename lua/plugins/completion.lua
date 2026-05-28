@@ -125,12 +125,4 @@ return {
     enabled = false, -- Set to true for Codeium
   },
 
-  --   Option C: Supermaven (free tier, very fast)
-  {
-    "supermaven-inc/supermaven-nvim",
-    cmd = "Supermaven",
-    event = "InsertEnter",
-    opts = {},
-    enabled = false, -- Set to true for Supermaven
-  },
 }
