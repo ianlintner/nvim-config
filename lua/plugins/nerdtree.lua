@@ -11,9 +11,16 @@ return {
     "NERDTreeFind",
     "NERDTreeClose",
   },
+  init = function()
+    vim.api.nvim_create_autocmd("VimEnter", {
+      callback = function()
+        if vim.fn.argc() == 0 or vim.fn.isdirectory(vim.fn.argv(0)) == 1 then
+          vim.cmd("NERDTree")
+        end
+      end,
+    })
+  end,
   config = function()
-    -- You can add custom NERDTree configurations here if desired.
-    -- E.g., showing hidden files:
-    -- vim.g.NERDTreeShowHidden = 1
+    vim.g.NERDTreeShowHidden = 1
   end,
 }
